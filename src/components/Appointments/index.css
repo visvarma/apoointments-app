@@ -1,0 +1,154 @@
+/* Write your CSS here */
+
+.app-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Roboto';
+}
+
+.main-container {
+  background-color: #fff;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.appointment-container {
+  background-color: #fff;
+  padding: 0px 30px;
+  border-radius: 10px;
+  width: 85%;
+  max-width: 1000px;
+}
+
+.form-container {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.form-container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.form-container form {
+  width: 100%;
+}
+
+.form-container form label {
+  font-size: 1rem;
+  color: #b5b7c4;
+}
+
+.form-container form input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #b5b7c4;
+  padding: 10px;
+  color: #000;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.form-container form button {
+  background-color: #8b5cf6;
+  color: #fff;
+  width: 50px;
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.img-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+@media (max-width: 668px) {
+  .form-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .img-container {
+    display: none;
+  }
+
+  * {
+    font-size: 13px;
+  }
+}
+
+.appointments-img {
+  display: none;
+}
+
+@media screen and (min-width: 668px) {
+  .appointments-img {
+    display: block;
+    width: 95%;
+  }
+}
+
+hr {
+  background-color: #b5b7c4;
+  color: #b5b7c4;
+}
+
+.appointment-list-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-list-heading-container h1 {
+  font-size: 1.3rem;
+}
+
+.filter-empty {
+  background-color: #8b5cf6;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+.filter-filled {
+  color: #ffffff;
+  background-color: #9897f0;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 668px) {
+  .appointments-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
